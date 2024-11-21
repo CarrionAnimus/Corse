@@ -54,7 +54,6 @@ modules:
       - pipewire-jack-audio-connection-kit-libs
       - pipewire-libs
       - pipewire-pulseaudio
-      - pipewire-media-session
       - pipewire-utils
       - pipewire-plugin-libcamera
       - wireplumber
