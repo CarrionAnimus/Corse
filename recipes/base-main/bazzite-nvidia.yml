@@ -1,0 +1,13 @@
+name: corse
+description: Base main bazzite nvidia
+
+alt-tags:
+  - base-main-bazzite-nvidia
+
+base-image: ghcr.io/ublue-os/base-main
+image-version: 41
+
+modules:
+  - from-file: base-main/kernel.yml
+  - from-file: base-main/nvidia.yml
+  - type: signing

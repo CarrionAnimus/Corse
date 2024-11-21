@@ -1,0 +1,14 @@
+modules:
+  - type: files
+    files:
+      - source: system/common
+        destination: /
+
+  - type: script
+    scripts:
+      - systemd-services.sh
+      - tesla-settings.sh
+      - kernel_options.sh
+      - image_name.sh
+      - plymouth_theme.sh
+      - build-initramfs.sh

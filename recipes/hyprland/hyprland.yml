@@ -1,0 +1,16 @@
+name: corse
+description: Hyprland nvidia open
+
+alt-tags:
+  - bazzite-nvidia-open-hyprland
+
+base-image: ghcr.io/carrionanimus/corse
+image-version: base-main-bazzite-nvidia-open
+
+modules:
+  - from-file: common/packages.yml
+  - from-file: hyprland/packages.yml
+  - from-file: common/flatpak.yml
+  - from-file: common/brew.yml
+  - from-file: common/scripts.yml
+  - type: signing
