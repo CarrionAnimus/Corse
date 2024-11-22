@@ -13,5 +13,6 @@ systemctl disable rpm-ostreed-automatic.timer
 systemctl enable sddm-boot.service
 systemctl enable scx.service
 systemctl enable lactd.service
+systemctl enable keyd.service
 
 # echo 'Enabling user services'
