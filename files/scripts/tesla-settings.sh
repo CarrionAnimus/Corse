@@ -32,6 +32,8 @@ nvidia-smi -i 0 -ac 3604,1202' > /usr/libexec/nvidia-powerlimit.sh
 # Make executable
 chmod +x /usr/libexec/nvidia-powerlimit.sh
 
-systemctl enable nvidia-powerlimit.service
+echo 'export VK_DRIVER_FILES=intel_icd.x86_64.json:intel_icd.i686.json:nvidia_icd.x86_64.json:nvidia_icd.i686.json' >> /etc/profile.d/hybrid-graphics.sh
+#echo 'export MESA_VK_DEVICE_SELECT=8086:9bc5' >> /etc/profile.d/hybrid-graphics.sh
 
+systemctl enable nvidia-powerlimit.service
 systemctl enable sshd
