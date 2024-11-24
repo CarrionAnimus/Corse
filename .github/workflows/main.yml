@@ -14,6 +14,10 @@ jobs:
   pkg-prune:
     name: Prune Container Packages
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
     steps:
       - name: Delete Old Packages
         uses: SmartsquareGmbH/delete-old-packages@v0.8.1
