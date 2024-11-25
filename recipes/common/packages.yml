@@ -8,7 +8,6 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/kylegospo/obs-vkcapture/repo/fedora-%OS_VERSION%/kylegospo-obs-vkcapture-fedora-%OS_VERSION%.repo?arch=x86_64
       - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo?arch=x86_64
       - https://copr.fedorainfracloud.org/coprs/ilyaz/LACT/repo/fedora-%OS_VERSION%/ilyaz-LACT-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-%OS_VERSION%/alternateved-keyd-fedora-%OS_VERSION%.repo
     keys:
       - https://repo.charm.sh/yum/gpg.key
     remove:
@@ -154,9 +153,6 @@ modules:
 
       # Linux GPU configuration utility
       - lact
-
-      # Key Re-mapper
-      - keyd
 
       # opentabletdriver
       - https://raw.githubusercontent.com/CarrionAnimus/Corse/main/files/rpm/opentabletdriver-0.6.4.0-1.fc%OS_VERSION%.x86_64.rpm
