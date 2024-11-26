@@ -14,7 +14,6 @@ modules:
       - xcur2png
       - xdg-desktop-portal-hyprland
       - xdg-desktop-portal-gtk
-      - hyprpaper
       - swww
 
       # Bar
@@ -24,7 +23,6 @@ modules:
 
       # launchers
       - rofi-wayland
-      - wofi
 
       # file manager
       - thunar
