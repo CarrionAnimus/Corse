@@ -10,7 +10,8 @@ image-version: 41
 modules:
   - from-file: common/bazzite-kernel.yml
   - from-file: common/bazzite-nvidia.yml
-  - from-file: common/packages.yml
+  - from-file: common/packages-main.yml
+  - from-file: common/packages-extra.yml
   - from-file: hyprland/packages.yml
   - from-file: common/flatpak.yml
   - from-file: common/brew.yml
