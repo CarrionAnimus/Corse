@@ -144,8 +144,6 @@ modules:
       - neovim
       - bat
       - eza
-      - gum
-      - glow
       - ncdu
       - poppler
       - fd-find
@@ -174,6 +172,8 @@ modules:
       # cli
       - starship
       - zellij
+      - gum
+      - glow
 
       # Linux GPU configuration utility
       - lact
