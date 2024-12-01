@@ -4,10 +4,21 @@ modules:
       - source: system/common
         destination: /
 
+  - type: systemd
+    system:
+      enabled:
+        - sddm-boot.service
+        - scx.service
+        - lactd.service
+      disable:
+        - rpm-ostreed-automatic.timer
+
   - type: script
     scripts:
-      - systemd-services.sh
-      - tesla-settings.sh
       - kernel_options.sh
       - image_name.sh
+      - tesla-settings.sh
+
+  - type: script
+    scripts:
       - build-initramfs.sh
