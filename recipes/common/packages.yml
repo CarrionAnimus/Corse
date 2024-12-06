@@ -6,10 +6,21 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/che/nerd-fonts/repo/fedora-%OS_VERSION%/che-nerd-fonts-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/kylegospo/obs-vkcapture/repo/fedora-%OS_VERSION%/kylegospo-obs-vkcapture-fedora-%OS_VERSION%.repo?arch=x86_64
       - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo?arch=x86_64
+      - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo?arch=x86_64
       - https://copr.fedorainfracloud.org/coprs/ilyaz/LACT/repo/fedora-%OS_VERSION%/ilyaz-LACT-fedora-%OS_VERSION%.repo
     keys:
       - https://repo.charm.sh/yum/gpg.key
+    remove:
+      - firefox
+      - firefox-langpacks
+      - htop
+      - ublue-os-update-services
     install:
+      # Kernel
+      - scx-scheds
+    
+      #- ublue-update
+    
       # Vulkan Mesa GL
       - ddcutil
       - vulkan-loader
