@@ -10,5 +10,4 @@ modules:
       - tesla-settings.sh
       - kernel_options.sh
       - image_name.sh
-      - plymouth_theme.sh
       - build-initramfs.sh
