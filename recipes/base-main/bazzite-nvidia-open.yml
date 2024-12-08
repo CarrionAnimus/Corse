@@ -13,4 +13,7 @@ modules:
       - bazzite-kernel
       - bazzite-kernel-akmods
       - bazzite-nvidia-open
+  - type: script
+    scripts:
+      - build-initramfs.sh
   - type: signing
