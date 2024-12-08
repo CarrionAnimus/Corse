@@ -1,0 +1,6 @@
+modules:
+  - type: containerfile
+    containerfiles:
+      - bazzite-kernel
+      - bazzite-kernel-akmods
+      - bazzite-nvidia

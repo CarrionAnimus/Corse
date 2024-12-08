@@ -4,10 +4,11 @@ description: Hyprland nvidia
 alt-tags:
   - bazzite-nvidia-hyprland-tesla
 
-base-image: ghcr.io/carrionanimus/corse
-image-version: base-main-bazzite-nvidia
+base-image: ghcr.io/ublue-os/base-main
+image-version: 41
 
 modules:
+  - from-file: bazzite-nvidia.yml
   - from-file: common/packages.yml
   - from-file: hyprland/packages.yml
   - from-file: common/flatpak.yml
