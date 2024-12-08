@@ -1,6 +1,7 @@
 RUN \
     --mount=type=bind,from=ghcr.io/ublue-os/bazzite-kernel:41-6.11.10-302.bazzite.fc41.x86_64,src=/tmp/rpms,dst=/tmp/kernel-rpms,rw \
     rpm-ostree cliwrap install-to-root / \
+    && rpm-ostree install elfutils-libelf \
     && rpm-ostree override replace \
         --experimental \
         /tmp/kernel-rpms/kernel-**.rpm \
